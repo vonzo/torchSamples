@@ -31,6 +31,7 @@ RUN pip3 install torch torchvision torchaudio --index-url https://download.pytor
 
 # Install additional Python packages
 RUN pip3 install opencv-python
+RUN pip3 install matplotlib
 
 RUN wget https://download.pytorch.org/libtorch/nightly/cpu/libtorch-shared-with-deps-latest.zip -P /usr/local/lib/ \
     && unzip /usr/local/lib/libtorch-shared-with-deps-latest.zip -d /usr/local/lib/
